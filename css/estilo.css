@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Storm&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bitcount+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Storm&display=swap');
 
+/* Reset */
+
+¨* {
+  padding: 0%;
+  margin: 0%;
+}
+
 /* Montserrat:
 .montserrat-<uniquifier> {
   font-family: "Montserrat", sans-serif;
@@ -28,66 +35,160 @@ Naranja: #E67E22*/
 
 
 /* Header */
- header {
+header {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
- background-color: #E67E22 
-
+  background-color: #E67E22
 }
 
 header ul {
-list-style: none;
+  list-style: none;
 }
 
-header a{
+header a {
   text-decoration: none;
-color: white;
+  color: white;
 }
 
 
 /* Main de index */
 
-.main_index{
-  font-family: "Alegreya", serif;
-  background-color: #E5D9B6
+.main_index {}
 
-  }
 
-.titulo{
-     font-family: "Alegreya", serif;
-     text-align: center;
-     font-weight: bold;
-     color: #1b7c00;
+.portada {}
+
+.logo {
+  width: 10 0%;
+  padding: 16px;
+
+}
+
+.historia {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 16px;
+
+}
+
+.historia div {
+  background-color: aqua;
+  width: 60%;
+  padding: 0px 16px 16px 50px;
+}
+
+.historia img {
+  width: 40%;
+}
+
+.excibiciones {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 16px background-color: #E67E22;
+}
+
+.descripcion {
+  background-color: rgb(188, 188, 255);
+  width: 60%;
+  padding: 16px 100px 16px 16px;
+}
+
+/* GRID Agenda */
+.grid_agenda {
+  display: grid;
+  grid-template-areas:
+    "titulo titulo titulo"
+    "texto1 dias texto2"
+    ". dias .";
+  grid-template-rows: 100px 120px 100px;
+  grid-template-columns: 30% 40% 30%
+}
+
+.titulo {
+  grid-area: titulo;
+  text-align: center;
+
+}
+
+.texto1_grid {
+  grid-area: texto1;
+}
+
+.dias_grid {
+  grid-area: dias;
+}
+
+.texto2_grid {
+  grid-area: texto2;
+}
+
+/* GRID Excibiciones */
+
+.grid_excibiciones {
+  display: grid;
+  width: 30%;
+  justify-content: space-between;
+  align-content: start;
+  align-items: center;
+  gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+ grid-template-areas:
+    "obra1 obra2 obra3"
+    "obra4 obra5 obra6"
+    "obra7 obra8 obra9"
      
+
+  
+
 }
 
-.slogan{
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    font-style: italic;
-  }
+.obra1 {
+  grid-area: obra1;
+  
 
-  h2{
-     font-family: "Montserrat", sans-serif;
-     text-align: center;
-     color: #1b7c00
+.obra2 {
+  grid-area: obra2;
 }
 
-.bienvenida{
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
+.obra3 {
+  grid-area: obra3;
 }
 
-h3{
- font-family: "Montserrat", sans-serif; 
+.obra4 {
+  grid-area: obra4;
 }
 
-.items{
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  font-weight: bold;
-  list-style: none;
+.obra5 {
+  grid-area: obra5;
 }
+
+.obra6 {
+  grid-area: obra6;
+}
+
+.obra7 {
+  grid-area: obra7;
+}
+
+.obra8 {
+  grid-area: obra8;
+}
+
+.obra9 {
+  grid-area: obra9;
+}
+
+.obra10 {
+  grid-area: obra10;
+}
+
+.obra11 {
+  grid-area: obra11;
+}
+
+
 
 /* Main de Menú */
 
@@ -100,7 +201,7 @@ h3{
 
 /* Footer */
 
-footer{
+/* footer{
    font-family: "Montserrat", sans-serif;
   font-weight: bold;
  background-color: #E67E22 
@@ -112,4 +213,4 @@ footer ul{
     background-color: #E67E22;
     font-weight: bold;
     font-family: "Montserrat", sans-serif
-}
+} */
