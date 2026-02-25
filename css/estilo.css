@@ -36,19 +36,43 @@ Naranja: #E67E22*/
 
 /* Header */
 header {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   background-color: #E67E22
 }
 
 header ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
   list-style: none;
+  
+}
+
+nav {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+
 }
 
 header a {
   text-decoration: none;
   color: white;
 }
+
+header img {
+  height: 50px;
+
+}
+
 
 
 /* Main de index */
@@ -65,7 +89,7 @@ header a {
 }
 
 .historia {
-  display: flex;
+  display: 5 flex;
   justify-content: space-around;
   align-items: flex-start;
   padding: 16px;
@@ -134,74 +158,74 @@ header a {
   align-items: center;
   gap: 50px;
   grid-template-columns: repeat(3, 1fr);
- grid-template-areas:
+  grid-template-areas:
     "obra1 obra2 obra3"
     "obra4 obra5 obra6"
     "obra7 obra8 obra9"
-     
 
-  
+
+
 
 }
 
 .obra1 {
   grid-area: obra1;
-  
-
-.obra2 {
-  grid-area: obra2;
-}
-
-.obra3 {
-  grid-area: obra3;
-}
-
-.obra4 {
-  grid-area: obra4;
-}
-
-.obra5 {
-  grid-area: obra5;
-}
-
-.obra6 {
-  grid-area: obra6;
-}
-
-.obra7 {
-  grid-area: obra7;
-}
-
-.obra8 {
-  grid-area: obra8;
-}
-
-.obra9 {
-  grid-area: obra9;
-}
-
-.obra10 {
-  grid-area: obra10;
-}
-
-.obra11 {
-  grid-area: obra11;
-}
 
 
+  .obra2 {
+    grid-area: obra2;
+  }
 
-/* Main de Menú */
+  .obra3 {
+    grid-area: obra3;
+  }
 
+  .obra4 {
+    grid-area: obra4;
+  }
 
-/* Main de Sucursales */
+  .obra5 {
+    grid-area: obra5;
+  }
+
+  .obra6 {
+    grid-area: obra6;
+  }
+
+  .obra7 {
+    grid-area: obra7;
+  }
+
+  .obra8 {
+    grid-area: obra8;
+  }
+
+  .obra9 {
+    grid-area: obra9;
+  }
+
+  .obra10 {
+    grid-area: obra10;
+  }
+
+  .obra11 {
+    grid-area: obra11;
+  }
 
 
 
+  /* Main de Menú */
 
 
-/* Footer */
+  /* Main de Sucursales */
 
-/* footer{
+
+
+
+
+  /* Footer */
+
+  /* footer{
    font-family: "Montserrat", sans-serif;
   font-weight: bold;
  background-color: #E67E22 
