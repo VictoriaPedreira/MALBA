@@ -168,7 +168,7 @@ header img {
 
 }
 
-.obra1 {
+.obra1{
   grid-area: obra1;
 
 
@@ -224,6 +224,10 @@ header img {
 
 
   /* Footer */
+footer ul{
+background-color: aquamarine
+};
+  
 
   /* footer{
    font-family: "Montserrat", sans-serif;
