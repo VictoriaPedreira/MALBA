@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Storm&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bitcount+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Storm&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-/* Reset */
-
-¨* {
-  padding: 0%;
-  margin: 0%;
-}
+/* Tipografias */
 
 /* Montserrat:
 .montserrat-<uniquifier> {
@@ -16,21 +11,24 @@
   font-style: normal;
   }
 
-  Alegreya:
-  .alegreya-<uniquifier> {
-  font-family: "Alegreya", serif;
+  Inter:
+  .inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
 }
- */
+
+  /* Paleta de colores: 
+Amarrillo: 
+
+/* Reset */
+¨* {
+  padding: 0%;
+  margin: 0%;
+}
 
 
-/* Paleta de colores: 
-Verde oscuro: #1b7c00
-Verde claro: #628141
-Beige: #E5D9B6
-Naranja: #E67E22*/
 
 /* Footer */
 
@@ -42,7 +40,7 @@ Footer {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  
+
 }
 
 .redes ul {
@@ -50,15 +48,15 @@ Footer {
   list-style: none;
   display: flex;
   align-items: center;
- 
+
 }
 
 .politicas {
   padding: 16px;
 }
 
-.politicas img{
-  height: 50px ;
+.politicas img {
+  height: 50px;
 }
 
 .politicas ul {
@@ -66,8 +64,15 @@ Footer {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 50px;
+  gap: 30px;
   padding: 0%;
+}
+
+.politicas a{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: black
 }
 
 
@@ -80,8 +85,7 @@ header {
   justify-content: space-between;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  background-color: #E67E22
+  font-weight: 900
 }
 
 header ul {
@@ -103,7 +107,7 @@ nav {
 
 header a {
   text-decoration: none;
-  color: white;
+  color: black
 }
 
 header img {
@@ -115,27 +119,35 @@ header img {
 
 /* Main de index */
 
-.main_index {}
+.main_index {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: black;
+}
 
 
 .portada {}
 
 .logo {
-  width: 10 0%;
+  width: 10%;
   padding: 16px;
 
 }
 
 .historia {
-  display: 5 flex;
+  display: flex;
   justify-content: space-around;
   align-items: flex-start;
   padding: 16px;
+}
 
+.historia h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 .historia div {
-  background-color: aqua;
   width: 60%;
   padding: 0px 16px 16px 50px;
 }
@@ -145,20 +157,67 @@ header img {
 }
 
 .excibiciones {
+  background-color: black;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 16px background-color: #E67E22;
+  padding: 16px
 }
 
 .descripcion {
-  background-color: rgb(188, 188, 255);
   width: 60%;
   padding: 16px 100px 16px 16px;
+  color: white;
 }
+
+.descripcion h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.descripcion h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.descripcion h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.grid_agenda h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.grid_agenda h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.grid_agenda ul {
+  height: 400px;
+  list-style: none;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid_agenda span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 
 /* GRID Agenda */
 .grid_agenda {
+  height: 500px;
+  padding: 16px;
   display: grid;
   grid-template-areas:
     "titulo titulo titulo"
@@ -167,6 +226,7 @@ header img {
   grid-template-rows: 100px 120px 100px;
   grid-template-columns: 30% 40% 30%
 }
+
 
 .titulo {
   grid-area: titulo;
