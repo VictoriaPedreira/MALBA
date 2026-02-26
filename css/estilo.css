@@ -32,6 +32,44 @@ Verde claro: #628141
 Beige: #E5D9B6
 Naranja: #E67E22*/
 
+/* Footer */
+
+Footer {
+  width: 100%;
+  padding: 16px;
+  background-color: gold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  
+}
+
+.redes ul {
+  padding: 0%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.politicas {
+  padding: 16px;
+}
+
+.politicas img{
+  height: 50px ;
+}
+
+.politicas ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+  padding: 0%;
+}
+
 
 
 /* Header */
@@ -52,7 +90,7 @@ header ul {
   justify-content: flex-end;
   gap: 50px;
   list-style: none;
-  
+
 }
 
 nav {
@@ -168,77 +206,56 @@ header img {
 
 }
 
-.obra1{
+.obra1 {
   grid-area: obra1;
 
-
-  .obra2 {
-    grid-area: obra2;
-  }
-
-  .obra3 {
-    grid-area: obra3;
-  }
-
-  .obra4 {
-    grid-area: obra4;
-  }
-
-  .obra5 {
-    grid-area: obra5;
-  }
-
-  .obra6 {
-    grid-area: obra6;
-  }
-
-  .obra7 {
-    grid-area: obra7;
-  }
-
-  .obra8 {
-    grid-area: obra8;
-  }
-
-  .obra9 {
-    grid-area: obra9;
-  }
-
-  .obra10 {
-    grid-area: obra10;
-  }
-
-  .obra11 {
-    grid-area: obra11;
-  }
-
-
-
-  /* Main de Menú */
-
-
-  /* Main de Sucursales */
-
-
-
-
-
-  /* Footer */
-footer ul{
-background-color: aquamarine
-};
-  
-
-  /* footer{
-   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
- background-color: #E67E22 
 }
 
-footer ul{
-    list-style: none;
-    color: white;
-    background-color: #E67E22;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif
-} */
+
+
+.obra2 {
+  grid-area: obra2;
+}
+
+.obra3 {
+  grid-area: obra3;
+}
+
+.obra4 {
+  grid-area: obra4;
+}
+
+.obra5 {
+  grid-area: obra5;
+}
+
+.obra6 {
+  grid-area: obra6;
+}
+
+.obra7 {
+  grid-area: obra7;
+}
+
+.obra8 {
+  grid-area: obra8;
+}
+
+.obra9 {
+  grid-area: obra9;
+}
+
+.obra10 {
+  grid-area: obra10;
+}
+
+.obra11 {
+  grid-area: obra11;
+}
+
+
+
+/* Main de Menú */
+
+
+/* Main de Sucursales */
