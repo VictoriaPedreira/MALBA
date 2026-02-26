@@ -315,7 +315,62 @@ header img {
 
 
 
-/* Main de Menú */
+/* Main de Excibiciones */
 
 
-/* Main de Sucursales */
+/* Main de Contacto */
+
+.main_contacto{
+font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+
+.consultas{
+  width: 70%;
+  padding: 16px;
+}
+
+.consultas h1{
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.sucursales h2{
+  padding: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sucursales h3{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.malba_figueroa{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+ 
+}
+
+
+
+.malba_puertos{
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+
+.main_contacto iframe{
+  width: 500px;
+  gap: 20px;
+}
