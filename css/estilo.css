@@ -68,7 +68,7 @@ Footer {
   padding: 0%;
 }
 
-.politicas a{
+.politicas a {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   text-decoration: none;
@@ -248,7 +248,7 @@ header img {
 
 /* Main de Excibiciones */
 
-.main_excibiciones h1{
+.main_excibiciones h1 {
   padding: 16px;
   margin-top: 60px;
   font-family: "Inter", sans-serif;
@@ -276,12 +276,13 @@ header img {
 /* OBRA 1 */
 .obra1 {
   grid-area: obra1;
- padding: 16px;
+  padding: 16px;
   gap: 16px;
   display: flex;
   flex-direction: column-reverse
 }
-.descripcion_obra1 h3{
+
+.descripcion_obra1 h3 {
   font-weight: bold;
 }
 
@@ -289,12 +290,13 @@ header img {
 /* OBRA 2 */
 .obra2 {
   grid-area: obra2;
-   padding: 16px;
+  padding: 16px;
   gap: 16px;
   display: flex;
   flex-direction: column-reverse
 }
-.descripcion_obra2 h3{
+
+.descripcion_obra2 h3 {
   font-weight: bold;
 }
 
@@ -306,7 +308,8 @@ header img {
   display: flex;
   flex-direction: column-reverse
 }
-.descripcion_obra3 h3{
+
+.descripcion_obra3 h3 {
   font-weight: bold;
 }
 
@@ -319,7 +322,8 @@ header img {
   display: flex;
   flex-direction: column-reverse
 }
-.descripcion_obra4 h3{
+
+.descripcion_obra4 h3 {
   font-weight: bold;
 }
 
@@ -331,7 +335,8 @@ header img {
   display: flex;
   flex-direction: column-reverse
 }
-.descripcion_obra5 h3{
+
+.descripcion_obra5 h3 {
   font-weight: bold;
 }
 
@@ -343,7 +348,8 @@ header img {
   display: flex;
   flex-direction: column-reverse
 }
-.descripcion_obra6 h3{
+
+.descripcion_obra6 h3 {
   font-weight: bold;
 }
 
@@ -351,12 +357,13 @@ header img {
 /* OBRA 7 */
 .obra7 {
   grid-area: obra7;
-   padding: 16px;
+  padding: 16px;
   gap: 16px;
   display: flex;
   flex-direction: column-reverse
 }
-.descripcion_obra7 h3{
+
+.descripcion_obra7 h3 {
   font-weight: bold;
 }
 
@@ -369,7 +376,7 @@ header img {
   flex-direction: column-reverse
 }
 
-.descripcion_obra8 h3{
+.descripcion_obra8 h3 {
   font-weight: bold;
 }
 
@@ -377,71 +384,81 @@ header img {
 .obra9 {
   grid-area: obra9;
   padding: 16px;
-  gap: 16px;
+  gap: 1px;
   display: flex;
   flex-direction: column-reverse
 }
-.descripcion_obra9 h3{
+
+.descripcion_obra9 h3 {
   font-weight: bold;
 }
-
-
 
 
 
 /* Main de Contacto */
 
-.main_contacto{
-font-family: "Montserrat", sans-serif;
+main {
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: black;
 }
 
-.consultas{
-  width: 70%;
-  padding: 16px;
-}
-
-.consultas h1{
+.consultas h1 {
   font-family: "Inter", sans-serif;
   font-size: 3rem;
   font-weight: 900;
 }
 
-.sucursales h2{
+.sucursales {
+  width: 90%;
   padding: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  display: flex;
+  align-items: flex-start
+}
+
+.sucursales h1 {
+  padding: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.malba_sucursales {
+  padding: 16px;
+  margin-left: 100px;
+
+}
+
+.malba_figueroa h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: bold;
+  margin: 0%
 }
 
-.sucursales h3{
+
+.malba_puertos {
+  margin-top: 50px;
+}
+
+.malba_puertos h3 {
   font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0%
+}
+
+.transporte ul {
+  list-style: none;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.transporte span {
   font-size: 1rem;
   font-weight: bold;
-}
-
-.malba_figueroa{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 16px;
- 
-}
-
-
-
-.malba_puertos{
-  width: 100%;
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  
-}
-
-.main_contacto iframe{
-  width: 500px;
-  gap: 20px;
 }
