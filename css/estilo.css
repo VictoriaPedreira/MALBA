@@ -246,6 +246,17 @@ header img {
   grid-area: texto2;
 }
 
+/* Main de Excibiciones */
+
+.main_excibiciones h1{
+  padding: 16px;
+  margin-top: 60px;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: black;
+}
+
 /* GRID Excibiciones */
 
 .grid_excibiciones {
@@ -260,62 +271,122 @@ header img {
     "obra1 obra2 obra3"
     "obra4 obra5 obra6"
     "obra7 obra8 obra9"
-
-
-
-
 }
 
+/* OBRA 1 */
 .obra1 {
   grid-area: obra1;
-
+ padding: 16px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column-reverse
+}
+.descripcion_obra1 h3{
+  font-weight: bold;
 }
 
 
-
+/* OBRA 2 */
 .obra2 {
   grid-area: obra2;
+   padding: 16px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column-reverse
+}
+.descripcion_obra2 h3{
+  font-weight: bold;
 }
 
+/* OBRA 3 */
 .obra3 {
   grid-area: obra3;
+  padding: 16px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column-reverse
+}
+.descripcion_obra3 h3{
+  font-weight: bold;
 }
 
+
+/* OBRA 4 */
 .obra4 {
   grid-area: obra4;
+  padding: 16px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column-reverse
+}
+.descripcion_obra4 h3{
+  font-weight: bold;
 }
 
+/* OBRA 5 */
 .obra5 {
   grid-area: obra5;
+  padding: 16px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column-reverse
+}
+.descripcion_obra5 h3{
+  font-weight: bold;
 }
 
+/* OBRA 6 */
 .obra6 {
   grid-area: obra6;
+  padding: 16px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column-reverse
+}
+.descripcion_obra6 h3{
+  font-weight: bold;
 }
 
+
+/* OBRA 7 */
 .obra7 {
   grid-area: obra7;
+   padding: 16px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column-reverse
+}
+.descripcion_obra7 h3{
+  font-weight: bold;
 }
 
+/* OBRA 8 */
 .obra8 {
+  padding: 16px;
+  gap: 16px;
   grid-area: obra8;
+  display: flex;
+  flex-direction: column-reverse
 }
 
+.descripcion_obra8 h3{
+  font-weight: bold;
+}
+
+/* OBRA 9 */
 .obra9 {
   grid-area: obra9;
+  padding: 16px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column-reverse
+}
+.descripcion_obra9 h3{
+  font-weight: bold;
 }
 
-.obra10 {
-  grid-area: obra10;
-}
-
-.obra11 {
-  grid-area: obra11;
-}
 
 
-
-/* Main de Excibiciones */
 
 
 /* Main de Contacto */
