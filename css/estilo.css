@@ -81,6 +81,9 @@ Footer {
 header {
   width: 100%;
   padding: 16px;
+  background-color: white;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,7 +128,9 @@ header img {
   color: black;
 }
 
-
+.video iframe{
+  width: 100vw;
+}
 
 
 .logo {
@@ -414,7 +419,6 @@ main {
   padding: 16px;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-top: solid 1px;
   border-bottom: solid 1px;
   display: flex;
   align-items: flex-start
@@ -458,7 +462,7 @@ main {
   display: flex;
   flex-direction: column;
 }
-.trs span {
+.transporte span {
   font-size: 1rem;
   font-weight: bold;
 }
