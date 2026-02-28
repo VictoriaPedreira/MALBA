@@ -129,7 +129,7 @@ header img {
   color: black;
 }
 
-.video iframe{
+.video iframe {
   width: 100vw;
 }
 
@@ -437,7 +437,7 @@ main {
   margin-left: 100px;
 }
 
-.malba_sucursales iframe{
+.malba_sucursales iframe {
   margin: 0;
 }
 
@@ -467,7 +467,106 @@ main {
   display: flex;
   flex-direction: column;
 }
+
 .transporte span {
   font-size: 1rem;
   font-weight: bold;
+}
+
+
+/* MEDIA QUERIES */
+
+/* DESCROP */
+
+/* MOBILE */
+
+@media (max-width: 480px){
+  
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header ul {
+    padding: 0%;
+    display: flex;
+    align-items: center;
+  }
+
+  .historia {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0%;
+  }
+
+  .historia div {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .historia img {
+    display: none;
+  }
+
+  .excibiciones id {
+    width: 100%;
+  }
+
+  .excibiciones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .descripcion {
+    width: 100%;
+  }
+
+  .descripcion h2 {
+    font-size: 1rem;
+  }
+
+  .descripcion p {
+    width: 400px;
+  }
+
+  .w-50{
+width: 100% !important;
+  }
+    
+
+
+
+
+.sucursales{
+  display: flex;
+  flex-direction: column;
+}
+
+.malba_sucursales{
+  margin: 0%;
+}
+.malba_sucursales iframe{
+  width: 400px;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start
+}
+
+.redes{
+  margin: 20px;
+  margin-left: 0%;
+}
+
+.politicas{
+  margin: 0%;
+  padding: 0%;
+}
+ 
 }
