@@ -226,8 +226,11 @@ body {
   margin: 20px;
 }
 
-.dropdown-menu li {
+.dropdown-menu a {
   margin-left: 10px !important;
+  text-decoration: none;
+  color: black
+  
 }
 
 /* GRID Agenda */
