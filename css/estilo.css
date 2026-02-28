@@ -20,15 +20,13 @@
 }
 
   /* Paleta de colores: 
-Amarrillo: 
+Amarrillo: Gold
 
 /* Reset */
 ¨* {
   padding: 0%;
   margin: 0%;
 }
-
-
 
 /* Footer */
 
@@ -75,9 +73,8 @@ Footer {
   color: black
 }
 
-
-
 /* Header */
+
 header {
   width: 100%;
   padding: 16px;
@@ -98,7 +95,6 @@ header ul {
   justify-content: flex-end;
   gap: 50px;
   list-style: none;
-
 }
 
 nav {
@@ -106,7 +102,6 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column-reverse;
-
 }
 
 header a {
@@ -116,10 +111,7 @@ header a {
 
 header img {
   height: 50px;
-
 }
-
-
 
 /* Main de index */
 
@@ -136,7 +128,6 @@ body {
 .video iframe {
   width: 100vw;
 }
-
 
 .logo {
   width: 10%;
@@ -240,6 +231,7 @@ body {
 }
 
 /* GRID Agenda */
+
 .grid_agenda {
   height: 500px;
   padding: 16px;
@@ -251,7 +243,6 @@ body {
   grid-template-rows: 100px 120px 100px;
   grid-template-columns: 30% 40% 30%
 }
-
 
 .titulo {
   grid-area: titulo;
@@ -427,8 +418,6 @@ body {
   font-weight: bold;
 }
 
-
-
 /* Main de COMO LLEGAR */
 
 main {
@@ -476,7 +465,6 @@ main {
   margin: 0%
 }
 
-
 .malba_puertos {
   margin-top: 50px;
 }
@@ -501,10 +489,7 @@ main {
   font-weight: bold;
 }
 
-
 /* MEDIA QUERIES */
-
-/* DESCROP */
 
 /* MOBILE */
 
@@ -574,16 +559,13 @@ main {
       "texto1"
       "dias"
       "texto2";
-      grid-template-columns: 100%;
-      grid-template-rows: auto;
-    }
-    .grid_agenda ul{
-      height: 300px;
-    }
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
 
-  
-
-
+  .grid_agenda ul {
+    height: 300px;
+  }
 
   .sucursales {
     display: flex;
