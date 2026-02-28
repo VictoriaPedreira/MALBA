@@ -223,19 +223,22 @@ body {
   font-weight: bold;
 }
 
-.agenda{
+.agenda {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-.dropdown_tickets{
+
+.dropdown_tickets {
   display: flex;
   align-self: flex-start;
   margin: 20px;
 }
+
 .dropdown-menu li {
   margin-left: 10px !important;
 }
+
 /* GRID Agenda */
 .grid_agenda {
   height: 500px;
@@ -258,14 +261,14 @@ body {
 
 .texto1_grid {
   grid-area: texto1;
-  
+
 }
 
 .dias_grid {
   grid-area: dias;
 }
 
-.texto2_grid{
+.texto2_grid {
   grid-area: texto2;
 }
 
@@ -505,8 +508,8 @@ main {
 
 /* MOBILE */
 
-@media (max-width: 480px){
-  
+@media (max-width: 480px) {
+
   header {
     width: 100%;
     display: flex;
@@ -558,45 +561,62 @@ main {
     width: 400px;
   }
 
-  .w-50{
-width: 100% !important;
+  .w-50 {
+    width: 100% !important;
   }
-    
+
+  .grid_agenda {
+    height: auto;
+    gap: 10px;
+    display: grid;
+    grid-template-areas:
+      "titulo"
+      "texto1"
+      "dias"
+      "texto2";
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+    }
+    .grid_agenda ul{
+      height: 300px;
+    }
+
+  
 
 
 
+  .sucursales {
+    display: flex;
+    flex-direction: column;
+  }
 
-.sucursales{
-  display: flex;
-  flex-direction: column;
-}
+  .malba_sucursales {
+    margin: 0%;
+  }
 
-.malba_sucursales{
-  margin: 0%;
-}
-.malba_sucursales iframe{
-  width: 400px;
-}
+  .malba_sucursales iframe {
+    width: 400px;
+  }
 
-footer{
-  display: flex;
-  flex-direction: column;
-  align-items:flex-start
-}
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+  }
 
-.redes{
-  margin: 20px;
-  margin-left: 0%;
-}
+  .redes {
+    margin: 20px;
+    margin-left: 0%;
+  }
 
-.politicas{
-  margin: 0%;
-  padding: 0%;
-}
+  .politicas {
+    margin: 0%;
+    padding: 0%;
+  }
 
-.grid_excibiciones{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
+  .grid_excibiciones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
