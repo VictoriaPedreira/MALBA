@@ -1,0 +1,464 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Storm&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* Tipografias */
+/* Montserrat:
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  }
+
+  Inter:
+  .inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+  /* Paleta de colores: 
+Amarrillo: Gold
+
+/* Reset */
+¨* {
+  padding: 0%;
+  margin: 0%;
+}
+
+/*Body*/
+body {
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  width: 100%;
+  padding: 16px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+header img {
+  height: 50px;
+}
+header nav {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Main de index */
+.main_index {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+.main_index video iframe {
+  width: 100vw;
+}
+.main_index .logo img {
+  width: 10%;
+  padding: 16px;
+}
+.main_index .historia {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 16px;
+}
+.main_index .historia img {
+  width: 40%;
+}
+.main_index .historia div {
+  width: 60%;
+  padding: 0px 16px 16px 50px;
+}
+.main_index .historia div h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.main_index .excibiciones {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 16px;
+}
+.main_index .excibiciones .descripcion {
+  width: 60%;
+  padding: 16px 100px 16px 16px;
+  color: white;
+}
+.main_index .excibiciones .descripcion h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.main_index .excibiciones .descripcion h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.main_index .excibiciones .descripcion h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.main_index .agenda {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.main_index .agenda .grid_agenda {
+  height: 500px;
+  padding: 16px;
+  display: grid;
+  grid-template-areas: "titulo titulo titulo" "texto1 dias texto2" ". dias texto2";
+  grid-template-rows: 100px 120px 100px;
+  grid-template-columns: 30% 40% 30%;
+}
+.main_index .agenda .grid_agenda h1 {
+  grid-area: titulo;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.main_index .agenda .grid_agenda h2 {
+  grid-area: texto1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.main_index .agenda .grid_agenda ul {
+  grid-area: dias;
+  height: 400px;
+  list-style: none;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.main_index .agenda .grid_agenda ul li span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.main_index .agenda .grid_agenda .dropdown_tickets {
+  display: flex;
+  align-self: flex-start;
+  margin: 20px;
+}
+.main_index .agenda .grid_agenda .dropdown-menu ul a {
+  margin-left: 10px !important;
+  text-decoration: none;
+  color: black;
+}
+.main_index .agenda .grid_agenda .dropdown_agenda {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  padding-right: 16px;
+}
+
+/* Main de Exhibiciones */
+.main_excibiciones h1 {
+  padding: 16px;
+  margin-top: 60px;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: black;
+}
+.main_excibiciones .grid_excibiciones {
+  display: grid;
+  width: 30%;
+  justify-content: space-between;
+  align-content: start;
+  align-items: center;
+  gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "obra1 obra2 obra3" "obra4 obra5 obra6" "obra7 obra8 obra9";
+}
+.main_excibiciones .grid_excibiciones .obra1 {
+  grid-area: obra1;
+  padding: 16px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.main_excibiciones .grid_excibiciones .obra1 div h3 {
+  font-weight: bold;
+}
+.main_excibiciones .grid_excibiciones .obra2 {
+  grid-area: obra2;
+  padding: 16px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.main_excibiciones .grid_excibiciones .obra2 div h3 {
+  font-weight: bold;
+}
+.main_excibiciones .grid_excibiciones .obra3 {
+  grid-area: obra3;
+  padding: 16px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.main_excibiciones .grid_excibiciones .obra3 div h3 {
+  font-weight: bold;
+}
+.main_excibiciones .grid_excibiciones .obra4 {
+  grid-area: obra4;
+  padding: 16px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.main_excibiciones .grid_excibiciones .obra4 div h3 {
+  font-weight: bold;
+}
+.main_excibiciones .grid_excibiciones .obra5 {
+  grid-area: obra5;
+  padding: 16px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.main_excibiciones .grid_excibiciones .obra5 div h3 {
+  font-weight: bold;
+}
+.main_excibiciones .grid_excibiciones .obra6 {
+  grid-area: obra6;
+  padding: 16px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.main_excibiciones .grid_excibiciones .obra6 div h3 {
+  font-weight: bold;
+}
+.main_excibiciones .grid_excibiciones .obra7 {
+  grid-area: obra7;
+  padding: 16px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.main_excibiciones .grid_excibiciones .obra7 div h3 {
+  font-weight: bold;
+}
+.main_excibiciones .grid_excibiciones .obra8 {
+  padding: 16px;
+  gap: 16px;
+  grid-area: obra8;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.main_excibiciones .grid_excibiciones .obra8 div h3 {
+  font-weight: bold;
+}
+.main_excibiciones .grid_excibiciones .obra9 {
+  grid-area: obra9;
+  padding: 16px;
+  gap: 1px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.main_excibiciones .grid_excibiciones .obra9 div h3 {
+  font-weight: bold;
+}
+
+/* Main de COMO LLEGAR */
+.main_como_llegar {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+.main_como_llegar .sucursales {
+  width: 90%;
+  padding: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+.main_como_llegar .sucursales h1 {
+  padding: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.main_como_llegar .sucursales .malba_sucursales {
+  padding: 16px;
+  margin-left: 100px;
+}
+.main_como_llegar .sucursales .malba_sucursales iframe {
+  margin: 0;
+}
+.main_como_llegar .sucursales .malba_sucursales .malba_figueroa h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0%;
+}
+.main_como_llegar .sucursales .malba_sucursales .malba_puertos {
+  margin-top: 50px;
+}
+.main_como_llegar .sucursales .malba_sucursales .malba_puertos h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0%;
+}
+.main_como_llegar .sucursales .transporte ul {
+  list-style: none;
+  padding: 16px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.main_como_llegar .sucursales .transporte span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Footer */
+Footer {
+  width: 100%;
+  padding: 16px;
+  background-color: gold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+Footer .redes ul {
+  padding: 0%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+Footer .politicas {
+  padding: 16px;
+}
+Footer .politicas img {
+  height: 50px;
+}
+Footer .politicas nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 0%;
+}
+Footer .politicas nav ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+/* MEDIA QUERIES */
+/* MOBILE */
+@media (max-width: 480px) {
+  /* Header */
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header ul {
+    padding: 0%;
+    display: flex;
+    align-items: center;
+  }
+  /* Main de index */
+  .historia {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0%;
+  }
+  .historia div {
+    width: 100%;
+    padding: 16px;
+  }
+  .historia img {
+    display: none;
+  }
+  .excibiciones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .excibiciones .excibiciones id {
+    width: 100%;
+  }
+  .excibiciones .descripcion {
+    width: 100%;
+  }
+  .excibiciones .descripcion h2 {
+    font-size: 1rem;
+  }
+  .excibiciones .descripcion p {
+    width: 400px;
+  }
+  .excibiciones .w-50 {
+    width: 100% !important;
+  }
+  .grid_agenda {
+    height: auto;
+    gap: 10px;
+    display: grid;
+    grid-template-areas: "titulo" "texto1" "dias" "texto2";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  .grid_agenda ul {
+    height: 300px;
+  }
+  /* Main de excibicionez */
+  .grid_excibiciones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* Main de COMO LLEGAR */
+.sucursales {
+  display: flex;
+  flex-direction: column;
+}
+.sucursales .malba_sucursales {
+  margin: 0%;
+}
+.sucursales .malba_sucursales iframe {
+  width: 400px;
+}
+
+/*# sourceMappingURL=style.css.map */

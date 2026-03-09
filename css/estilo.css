@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Storm&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Storm&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
 
 /* Tipografias */
 
@@ -23,14 +23,14 @@
 Amarrillo: Gold
 
 /* Reset */
-¨* {
+/* ¨* {
   padding: 0%;
   margin: 0%;
 }
 
 /* Footer */
 
-Footer {
+/* Footer {
   width: 100%;
   padding: 16px;
   background-color: gold;
@@ -39,20 +39,20 @@ Footer {
   align-items: center;
   align-content: center;
 
-}
+} */
 
-.redes ul {
+/* .redes ul {
   padding: 0%;
   list-style: none;
   display: flex;
   align-items: center;
 
-}
+} */
 
-.politicas {
+/* .politicas {
   padding: 16px;
-}
-
+} */
+/* 
 .politicas img {
   height: 50px;
 }
@@ -64,17 +64,17 @@ Footer {
   justify-content: flex-start;
   gap: 30px;
   padding: 0%;
-}
+} */
 
-.politicas a {
+/* .politicas a {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   text-decoration: none;
   color: black
-}
+} */
 
 /* Header */
-
+/* 
 header {
   width: 100%;
   padding: 16px;
@@ -87,9 +87,9 @@ header {
   align-items: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 900
-}
+} */
 
-header ul {
+/* header ul {
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -102,8 +102,8 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column-reverse;
-}
-
+} */
+/* 
 header a {
   text-decoration: none;
   color: black
@@ -115,7 +115,7 @@ header img {
 
 /* Main de index */
 
-body {
+/* body {
   overflow-x: hidden;
 }
 
@@ -123,8 +123,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: black;
-}
-
+} */
+/* 
 .video iframe {
   width: 100vw;
 }
@@ -140,9 +140,9 @@ body {
   justify-content: space-around;
   align-items: flex-start;
   padding: 16px;
-}
+} */
 
-.historia h1 {
+/* .historia h1 {
   font-family: "Inter", sans-serif;
   font-size: 3rem;
   font-weight: 900;
@@ -155,9 +155,9 @@ body {
 
 .historia img {
   width: 40%;
-}
+} */
 
-.excibiciones {
+/* .excibiciones {
   background-color: black;
   display: flex;
   justify-content: space-around;
@@ -169,9 +169,9 @@ body {
   width: 60%;
   padding: 16px 100px 16px 16px;
   color: white;
-}
+} */
 
-.descripcion h1 {
+/* .descripcion h1 {
   font-family: "Inter", sans-serif;
   font-size: 3rem;
   font-weight: 900;
@@ -181,9 +181,9 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: bold;
-}
+} */
 
-.descripcion h3 {
+/* .descripcion h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: bold;
@@ -199,9 +199,9 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: bold;
-}
+} */
 
-.grid_agenda ul {
+/* .grid_agenda ul {
   height: 400px;
   list-style: none;
   gap: 20px;
@@ -218,8 +218,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-
+} */
+/* 
 .dropdown_tickets {
   display: flex;
   align-self: flex-start;
@@ -230,11 +230,11 @@ body {
   margin-left: 10px !important;
   text-decoration: none;
   color: black
-}
+} */
 
 /* GRID Agenda */
 
-.grid_agenda {
+/* .grid_agenda {
   height: 500px;
   padding: 16px;
   display: grid;
@@ -250,8 +250,8 @@ body {
   grid-area: titulo;
   text-align: center;
 
-}
-
+} */
+/* 
 .texto1_grid {
   grid-area: texto1;
 
@@ -271,11 +271,11 @@ body {
   flex-direction: row-reverse;
   align-items: flex-start;
   padding-right: 16px;
-}
+} */
 
 /* Main de Excibiciones */
 
-.main_excibiciones h1 {
+/* .main_excibiciones h1 {
   padding: 16px;
   margin-top: 60px;
   font-family: "Inter", sans-serif;
@@ -286,7 +286,7 @@ body {
 
 /* GRID Excibiciones */
 
-.grid_excibiciones {
+/* .grid_excibiciones {
   display: grid;
   width: 30%;
   justify-content: space-between;
@@ -298,10 +298,10 @@ body {
     "obra1 obra2 obra3"
     "obra4 obra5 obra6"
     "obra7 obra8 obra9"
-}
-
+} */
+*/
 /* OBRA 1 */
-.obra1 {
+/* .obra1 {
   grid-area: obra1;
   padding: 16px;
   gap: 16px;
@@ -311,11 +311,11 @@ body {
 
 .descripcion_obra1 h3 {
   font-weight: bold;
-}
+} */
 
 
 /* OBRA 2 */
-.obra2 {
+/* .obra2 {
   grid-area: obra2;
   padding: 16px;
   gap: 16px;
@@ -325,10 +325,10 @@ body {
 
 .descripcion_obra2 h3 {
   font-weight: bold;
-}
+} */
 
 /* OBRA 3 */
-.obra3 {
+/* .obra3 {
   grid-area: obra3;
   padding: 16px;
   gap: 16px;
@@ -338,11 +338,11 @@ body {
 
 .descripcion_obra3 h3 {
   font-weight: bold;
-}
+} */
 
 
 /* OBRA 4 */
-.obra4 {
+/* .obra4 {
   grid-area: obra4;
   padding: 16px;
   gap: 16px;
@@ -352,10 +352,10 @@ body {
 
 .descripcion_obra4 h3 {
   font-weight: bold;
-}
+} */
 
 /* OBRA 5 */
-.obra5 {
+/* .obra5 {
   grid-area: obra5;
   padding: 16px;
   gap: 16px;
@@ -365,10 +365,10 @@ body {
 
 .descripcion_obra5 h3 {
   font-weight: bold;
-}
+} */
 
 /* OBRA 6 */
-.obra6 {
+/* .obra6 {
   grid-area: obra6;
   padding: 16px;
   gap: 16px;
@@ -378,11 +378,11 @@ body {
 
 .descripcion_obra6 h3 {
   font-weight: bold;
-}
+} */
 
 
 /* OBRA 7 */
-.obra7 {
+/* .obra7 {
   grid-area: obra7;
   padding: 16px;
   gap: 16px;
@@ -394,21 +394,21 @@ body {
   font-weight: bold;
 }
 
-/* OBRA 8 */
-.obra8 {
+OBRA 8 */
+/* .obra8 {
   padding: 16px;
   gap: 16px;
   grid-area: obra8;
   display: flex;
   flex-direction: column-reverse
-}
+} */
 
-.descripcion_obra8 h3 {
+/* .descripcion_obra8 h3 {
   font-weight: bold;
 }
 
 /* OBRA 9 */
-.obra9 {
+/* .obra9 {
   grid-area: obra9;
   padding: 16px;
   gap: 1px;
@@ -418,11 +418,11 @@ body {
 
 .descripcion_obra9 h3 {
   font-weight: bold;
-}
-
+} */
+*/
 /* Main de COMO LLEGAR */
 
-main {
+/* .main_como_llegar {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: black;
@@ -441,9 +441,9 @@ main {
   margin-bottom: 20px;
   display: flex;
   align-items: flex-start
-}
+} */
 
-.sucursales h1 {
+/* .sucursales h1 {
   padding: 16px;
   font-family: "Inter", sans-serif;
   font-size: 3rem;
@@ -457,9 +457,9 @@ main {
 
 .malba_sucursales iframe {
   margin: 0;
-}
+} */
 
-.malba_figueroa h3 {
+/* .malba_figueroa h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: bold;
@@ -468,9 +468,9 @@ main {
 
 .malba_puertos {
   margin-top: 50px;
-}
+} */
 
-.malba_puertos h3 {
+/* .malba_puertos h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: bold;
@@ -483,9 +483,9 @@ main {
   gap: 20px;
   display: flex;
   flex-direction: column;
-}
+} */
 
-.transporte span {
+/* .transporte span {
   font-size: 1rem;
   font-weight: bold;
 }
@@ -494,34 +494,29 @@ main {
 
 /* MOBILE */
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
 
   header {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
+  } */
 
-  header ul {
+/* header ul {
     padding: 0%;
     display: flex;
     align-items: center;
-  }
-
+  } */
+/* 
   .historia {
     width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 0%;
-  }
-
-  .historia div {
+    display:  /* .historia div {
     width: 100%;
     padding: 16px;
-  }
+  } */
 
-  .historia img {
+/* .historia img {
     display: none;
   }
 
@@ -533,9 +528,13 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-  }
-
-  .descripcion {
+  } */
+/* flex;
+    flex-direction: column-reverse;
+    padding: 0%;
+  } */
+*/ */
+/* .descripcion {
     width: 100%;
   }
 
@@ -562,13 +561,13 @@ main {
       "texto2";
     grid-template-columns: 100%;
     grid-template-rows: auto;
-  }
-
+  } */
+/* 
   .grid_agenda ul {
     height: 300px;
-  }
+  } */
 
-  .sucursales {
+/* .sucursales {
     display: flex;
     flex-direction: column;
   }
@@ -585,9 +584,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start
-  }
+  } */
 
-  .redes {
+/* .redes {
     margin: 20px;
     margin-left: 0%;
   }
@@ -597,9 +596,8 @@ main {
     padding: 0%;
   }
 
-  .grid_excibiciones {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
+  .grid_exhibiciones {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
