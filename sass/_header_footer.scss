@@ -1,0 +1,100 @@
+@use "./variables" as *;
+
+
+/* Header */
+
+header {
+    width: 100%;
+    padding: 16px;
+    background-color: $blanco;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    .dropdown{
+        display: none;
+    }
+    
+
+    img {
+        height: 50px;
+    }
+
+    nav {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            gap: 50px;
+            list-style: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: $negro;
+                }
+            }
+
+        }
+    }
+}
+
+/* Footer */
+
+Footer {
+    width: 100%;
+    padding: 16px;
+    background-color: $amarillo;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    .redes {
+        ul {
+            padding: 0%;
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .politicas {
+        padding: 16px;
+
+        img {
+            height: 50px;
+        }
+
+        nav {
+            ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 30px;
+                padding: 0%;
+
+                li {
+                    a {
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: $negro;
+                    }
+                }
+
+            }
+        }
+    }
+
+}

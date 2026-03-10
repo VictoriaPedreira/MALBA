@@ -1,0 +1,375 @@
+@use "./variables" as *;
+/* Main de index */
+
+.main_index {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: $negro;
+
+    video {
+        iframe {
+            width: 100vw;
+        }
+    }
+
+    .logo {
+        img {
+            width: 10%;
+            padding: 16px;
+        }
+    }
+
+    .historia {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 16px;
+
+        img {
+            width: 40%;
+        }
+
+        div {
+            width: 60%;
+            padding: 0px 16px 16px 50px;
+
+            h1 {
+                font-family: "Inter", sans-serif;
+                font-size: 3rem;
+                font-weight: 900;
+            }
+        }
+    }
+
+    .excibiciones {
+        background-color: $negro;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 16px;
+
+        .descripcion {
+            width: 60%;
+            padding: 16px 100px 16px 16px;
+            color: $blanco;
+
+            h1 {
+                font-family: "Inter", sans-serif;
+                font-size: 3rem;
+                font-weight: 900;
+            }
+
+            h2 {
+                font-family: "Montserrat", sans-serif;
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            h3 {
+                font-family: "Montserrat", sans-serif;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .agenda {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .grid_agenda {
+            height: 500px;
+            padding: 16px;
+            display: grid;
+            grid-template-areas:
+                "titulo titulo titulo"
+                "texto1 dias texto2"
+                ". dias texto2";
+            grid-template-rows: 100px 120px 100px;
+            grid-template-columns: 30% 40% 30%;
+
+            h1 {
+                grid-area: titulo;
+                text-align: center;
+                font-family: "Inter", sans-serif;
+                font-size: 3rem;
+                font-weight: 900;
+            }
+
+            h2 {
+                grid-area: texto1;
+                font-family: "Montserrat", sans-serif;
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            ul {
+                grid-area: dias;
+                height: 400px;
+                list-style: none;
+                gap: 20px;
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    span {
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .dropdown_tickets {
+                display: flex;
+                align-self: flex-start;
+                margin: 20px;
+            }
+
+            .dropdown-menu {
+                ul {
+                    a {
+                        margin-left: 10px !important;
+                        text-decoration: none;
+                        color: $negro;
+                    }
+
+                }
+
+            }
+
+            .dropdown_agenda {
+                width: 100%;
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: flex-start;
+                padding-right: 16px;
+            }
+
+        }
+
+    }
+}
+
+
+/* Main de Exhibiciones */
+.main_excibiciones {
+    h1 {
+        padding: 16px;
+        margin-top: 60px;
+        font-family: "Inter", sans-serif;
+        font-size: 3rem;
+        font-weight: 900;
+        color: $negro;
+    }
+
+    .grid_excibiciones {
+        display: grid;
+        width: 30%;
+        justify-content: space-between;
+        align-content: start;
+        align-items: center;
+        gap: 50px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "obra1 obra2 obra3"
+            "obra4 obra5 obra6"
+            "obra7 obra8 obra9";
+
+        .obra1 {
+            grid-area: obra1;
+            padding: 16px;
+            gap: 16px;
+            display: flex;
+            flex-direction: column-reverse;
+
+            div {
+                h3 {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .obra2 {
+            grid-area: obra2;
+            padding: 16px;
+            gap: 16px;
+            display: flex;
+            flex-direction: column-reverse;
+
+            div {
+                h3 {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .obra3 {
+            grid-area: obra3;
+            padding: 16px;
+            gap: 16px;
+            display: flex;
+            flex-direction: column-reverse;
+
+            div {
+                h3 {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .obra4 {
+            grid-area: obra4;
+            padding: 16px;
+            gap: 16px;
+            display: flex;
+            flex-direction: column-reverse;
+
+            div {
+                h3 {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .obra5 {
+            grid-area: obra5;
+            padding: 16px;
+            gap: 16px;
+            display: flex;
+            flex-direction: column-reverse;
+
+            div {
+                h3 {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .obra6 {
+            grid-area: obra6;
+            padding: 16px;
+            gap: 16px;
+            display: flex;
+            flex-direction: column-reverse;
+
+            div {
+                h3 {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .obra7 {
+            grid-area: obra7;
+            padding: 16px;
+            gap: 16px;
+            display: flex;
+            flex-direction: column-reverse;
+
+            div {
+                h3 {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .obra8 {
+            padding: 16px;
+            gap: 16px;
+            grid-area: obra8;
+            display: flex;
+            flex-direction: column-reverse;
+
+            div {
+                h3 {
+                    font-weight: bold;
+                }
+            }
+
+        }
+
+        .obra9 {
+            grid-area: obra9;
+            padding: 16px;
+            gap: 1px;
+            display: flex;
+            flex-direction: column-reverse;
+
+            div {
+                h3 {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+/* Main de COMO LLEGAR */
+.main_como_llegar {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: $negro;
+
+    .sucursales {
+        width: 90%;
+        padding: 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: flex-start;
+
+        h1 {
+            padding: 16px;
+            font-family: "Inter", sans-serif;
+            font-size: 3rem;
+            font-weight: 900;
+        }
+
+        .malba_sucursales {
+            padding: 16px;
+            margin-left: 100px;
+
+            iframe {
+                margin: 0;
+            }
+
+            .malba_figueroa {
+                h3 {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    margin: 0%
+                }
+            }
+
+            .malba_puertos {
+                margin-top: 50px;
+
+                h3 {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    margin: 0%
+                }
+            }
+
+        }
+
+        .transporte {
+            ul {
+                list-style: none;
+                padding: 16px;
+                gap: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            span {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
