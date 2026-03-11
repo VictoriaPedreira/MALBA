@@ -6,16 +6,16 @@
     font-size: 1rem;
     color: $negro;
 
-    video {
-        iframe {
-            width: 100vw;
-        }
+    iframe {
+        width: 100vw;
+       
+
     }
 
     .logo {
         img {
-            width: 10%;
-            padding: 16px;
+            width: 30%;
+            padding: 30px;
         }
     }
 
@@ -23,7 +23,7 @@
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
-        padding: 16px;
+        padding: 30px;
 
         img {
             width: 40%;
@@ -46,26 +46,26 @@
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
-        padding: 16px;
+        padding: 30px;
 
         .descripcion {
             width: 60%;
-            padding: 16px 100px 16px 16px;
+            padding: 0px 100px 16px 16px;
             color: $blanco;
 
-            h1 {
+            h2 {
                 font-family: "Inter", sans-serif;
                 font-size: 3rem;
                 font-weight: 900;
             }
 
-            h2 {
+            h3 {
                 font-family: "Montserrat", sans-serif;
                 font-size: 2rem;
                 font-weight: bold;
             }
 
-            h3 {
+            h4 {
                 font-family: "Montserrat", sans-serif;
                 font-size: 1rem;
                 font-weight: bold;
@@ -80,7 +80,7 @@
 
         .grid_agenda {
             height: 500px;
-            padding: 16px;
+            padding: 30px;
             display: grid;
             grid-template-areas:
                 "titulo titulo titulo"
@@ -89,7 +89,7 @@
             grid-template-rows: 100px 120px 100px;
             grid-template-columns: 30% 40% 30%;
 
-            h1 {
+            h2 {
                 grid-area: titulo;
                 text-align: center;
                 font-family: "Inter", sans-serif;
@@ -97,7 +97,7 @@
                 font-weight: 900;
             }
 
-            h2 {
+            h3 {
                 grid-area: texto1;
                 font-family: "Montserrat", sans-serif;
                 font-size: 2rem;
@@ -155,7 +155,7 @@
 /* Main de Exhibiciones */
 .main_excibiciones {
     h1 {
-        padding: 16px;
+        padding: 30px;
         margin-top: 60px;
         font-family: "Inter", sans-serif;
         font-size: 3rem;
@@ -178,13 +178,13 @@
 
         .obra1 {
             grid-area: obra1;
-            padding: 16px;
+            padding: 16px 16px 16px 30px;
             gap: 16px;
             display: flex;
             flex-direction: column-reverse;
 
             div {
-                h3 {
+                h2 {
                     font-weight: bold;
                 }
             }
@@ -198,7 +198,7 @@
             flex-direction: column-reverse;
 
             div {
-                h3 {
+                h2 {
                     font-weight: bold;
                 }
             }
@@ -212,7 +212,7 @@
             flex-direction: column-reverse;
 
             div {
-                h3 {
+                h2 {
                     font-weight: bold;
                 }
             }
@@ -220,13 +220,13 @@
 
         .obra4 {
             grid-area: obra4;
-            padding: 16px;
+            padding: 16px 16px 16px 30px;
             gap: 16px;
             display: flex;
             flex-direction: column-reverse;
 
             div {
-                h3 {
+                h2 {
                     font-weight: bold;
                 }
             }
@@ -240,7 +240,7 @@
             flex-direction: column-reverse;
 
             div {
-                h3 {
+                h2 {
                     font-weight: bold;
                 }
             }
@@ -254,7 +254,7 @@
             flex-direction: column-reverse;
 
             div {
-                h3 {
+                h2 {
                     font-weight: bold;
                 }
             }
@@ -262,13 +262,13 @@
 
         .obra7 {
             grid-area: obra7;
-            padding: 16px;
+            padding: 16px 16px 16px 30px;
             gap: 16px;
             display: flex;
             flex-direction: column-reverse;
 
             div {
-                h3 {
+                h2 {
                     font-weight: bold;
                 }
             }
@@ -282,7 +282,7 @@
             flex-direction: column-reverse;
 
             div {
-                h3 {
+                h2 {
                     font-weight: bold;
                 }
             }
@@ -297,7 +297,7 @@
             flex-direction: column-reverse;
 
             div {
-                h3 {
+                h2 {
                     font-weight: bold;
                 }
             }
