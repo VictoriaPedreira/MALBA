@@ -110,64 +110,78 @@ Footer .politicas nav ul li a:hover {
   font-size: 1rem;
   color: #000000;
 }
-.main_index iframe {
+.main_index .portada {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  animation-name: portada;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-duration: 10s;
+}
+
+iframe {
   width: 100vw;
 }
-.main_index .logo img {
+
+.logo img {
   width: 30%;
   padding: 30px;
 }
-.main_index .historia {
+
+.historia {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   padding: 30px;
 }
-.main_index .historia img {
+.historia img {
   width: 40%;
 }
-.main_index .historia div {
+.historia div {
   width: 60%;
   padding: 0px 16px 16px 50px;
 }
-.main_index .historia div h1 {
+.historia div h1 {
   font-family: "Inter", sans-serif;
   font-size: 3rem;
   font-weight: 900;
 }
-.main_index .excibiciones {
+
+.excibiciones {
   background-color: #000000;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   padding: 30px;
 }
-.main_index .excibiciones .descripcion {
+.excibiciones .descripcion {
   width: 60%;
   padding: 0px 100px 16px 16px;
   color: #ffffff;
 }
-.main_index .excibiciones .descripcion h2 {
+.excibiciones .descripcion h2 {
   font-family: "Inter", sans-serif;
   font-size: 3rem;
   font-weight: 900;
 }
-.main_index .excibiciones .descripcion h3 {
+.excibiciones .descripcion h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: bold;
 }
-.main_index .excibiciones .descripcion h4 {
+.excibiciones .descripcion h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: bold;
 }
-.main_index .agenda {
+
+.agenda {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-.main_index .agenda .grid_agenda {
+.agenda .grid_agenda {
   height: 500px;
   padding: 30px;
   display: grid;
@@ -175,20 +189,20 @@ Footer .politicas nav ul li a:hover {
   grid-template-rows: 100px 120px 100px;
   grid-template-columns: 30% 40% 30%;
 }
-.main_index .agenda .grid_agenda h2 {
+.agenda .grid_agenda h2 {
   grid-area: titulo;
   text-align: center;
   font-family: "Inter", sans-serif;
   font-size: 3rem;
   font-weight: 900;
 }
-.main_index .agenda .grid_agenda h3 {
+.agenda .grid_agenda h3 {
   grid-area: texto1;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: bold;
 }
-.main_index .agenda .grid_agenda ul {
+.agenda .grid_agenda ul {
   grid-area: dias;
   height: 400px;
   list-style: none;
@@ -196,21 +210,21 @@ Footer .politicas nav ul li a:hover {
   display: flex;
   flex-direction: column;
 }
-.main_index .agenda .grid_agenda ul li span {
+.agenda .grid_agenda ul li span {
   font-size: 1rem;
   font-weight: bold;
 }
-.main_index .agenda .grid_agenda .dropdown_tickets {
+.agenda .grid_agenda .dropdown_tickets {
   display: flex;
   align-self: flex-start;
   margin: 20px;
 }
-.main_index .agenda .grid_agenda .dropdown-menu ul a {
+.agenda .grid_agenda .dropdown-menu ul a {
   margin-left: 10px !important;
   text-decoration: none;
   color: #000000;
 }
-.main_index .agenda .grid_agenda .dropdown_agenda {
+.agenda .grid_agenda .dropdown_agenda {
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
@@ -218,6 +232,23 @@ Footer .politicas nav ul li a:hover {
   padding-right: 16px;
 }
 
+@keyframes portada {
+  0% {
+    background-image: url(../imagenes/portada.jpg);
+  }
+  25% {
+    background-image: url(../imagenes/portada_2.jpg);
+  }
+  50% {
+    background-image: url(../imagenes/portada_3.jpg);
+  }
+  75% {
+    background-image: url(../imagenes/portada_4.jpg);
+  }
+  100% {
+    background-image: url(../imagenes/portada.jpg);
+  }
+}
 /* Main de Exhibiciones */
 .main_excibiciones h1 {
   padding: 30px;
