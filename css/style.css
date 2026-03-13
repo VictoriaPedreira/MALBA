@@ -433,6 +433,10 @@ iframe {
     align-items: center;
   }
   /* Main de index */
+  .logo img {
+    width: 100%;
+    padding: 20px;
+  }
   .historia {
     width: 100%;
     display: flex;
@@ -451,14 +455,11 @@ iframe {
     display: flex;
     flex-direction: column;
   }
-  .excibiciones .excibiciones id {
-    width: 100%;
-  }
   .excibiciones .descripcion {
     width: 100%;
   }
-  .excibiciones .descripcion h2 {
-    font-size: 1rem;
+  .excibiciones .descripcion h3 {
+    font-size: x-large;
   }
   .excibiciones .descripcion p {
     width: 400px;
@@ -466,16 +467,27 @@ iframe {
   .excibiciones .w-50 {
     width: 100% !important;
   }
-  .grid_agenda {
+  .agenda .grid_agenda {
+    width: 100%;
     height: auto;
     gap: 10px;
     display: grid;
     grid-template-areas: "titulo" "texto1" "dias" "texto2";
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-  .grid_agenda ul {
+  .agenda .grid_agenda .titulo {
+    grid-area: titulo;
+  }
+  .agenda .grid_agenda .texto1_grid {
+    grid-area: texto1;
+  }
+  .agenda .grid_agenda .dias_grid {
+    grid-area: dias;
     height: 300px;
+  }
+  .agenda .grid_agenda p {
+    grid-area: texto2;
   }
   /* Main de COMO LLEGAR */
   .sucursales {
@@ -489,10 +501,24 @@ iframe {
     width: 400px;
   }
   /* Main de excibicionez */
-  .grid_excibiciones {
+  .main_excibiciones .grid_excibiciones {
     width: 100%;
     display: flex;
     flex-direction: column;
+  }
+  /* Footer */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .nav {
+    margin: 20px;
+    margin-left: 0%;
+  }
+  footer .politicas {
+    margin: 0%;
+    padding: 0%;
   }
 }
 
