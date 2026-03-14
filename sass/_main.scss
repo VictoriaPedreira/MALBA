@@ -15,26 +15,12 @@
         animation-iteration-count: infinite;
         animation-delay: 0s;
         animation-duration: 10s;
-
-        // animation: portada 20s linear infinite;
     }
-
-
-
 
 }
 
-
-
-
-
-
-
-
 iframe {
     width: 100vw;
-
-
 }
 
 .logo {
@@ -59,9 +45,7 @@ iframe {
         padding: 0px 16px 16px 50px;
 
         h1 {
-            font-family: "Inter", sans-serif;
-            font-size: 3rem;
-            font-weight: 900;
+            @include estilo_titulo
         }
     }
 }
@@ -79,21 +63,18 @@ iframe {
         color: $blanco;
 
         h2 {
-            font-family: "Inter", sans-serif;
-            font-size: 3rem;
-            font-weight: 900;
+            @include estilo_titulo
         }
 
         h3 {
-            font-family: "Montserrat", sans-serif;
-            font-size: 2rem;
-            font-weight: bold;
+            @include estilo_subtitulo
         }
 
         h4 {
             font-family: "Montserrat", sans-serif;
             font-size: 1rem;
             font-weight: bold;
+
         }
     }
 }
@@ -115,18 +96,11 @@ iframe {
         grid-template-columns: 30% 40% 30%;
 
         h2 {
-            grid-area: titulo;
-            text-align: center;
-            font-family: "Inter", sans-serif;
-            font-size: 3rem;
-            font-weight: 900;
+            @include estilo_titulo
         }
 
         h3 {
-            grid-area: texto1;
-            font-family: "Montserrat", sans-serif;
-            font-size: 2rem;
-            font-weight: bold;
+            @include estilo_subtitulo
         }
 
         ul {
@@ -139,8 +113,7 @@ iframe {
 
             li {
                 span {
-                    font-size: 1rem;
-                    font-weight: bold;
+                    @include estilo_span
                 }
             }
         }
@@ -212,10 +185,8 @@ iframe {
     h1 {
         padding: 30px;
         margin-top: 60px;
-        font-family: "Inter", sans-serif;
-        font-size: 3rem;
-        font-weight: 900;
         color: $negro;
+        @include estilo_titulo
     }
 
     .grid_excibiciones {
@@ -240,7 +211,10 @@ iframe {
 
             div {
                 h2 {
-                    font-weight: bold;
+                    a {
+                        @include descripcion_obras
+                    }
+
                 }
             }
         }
@@ -254,7 +228,10 @@ iframe {
 
             div {
                 h2 {
-                    font-weight: bold;
+                    a {
+                        @include descripcion_obras
+                    }
+
                 }
             }
         }
@@ -268,7 +245,10 @@ iframe {
 
             div {
                 h2 {
-                    font-weight: bold;
+                    a {
+                        @include descripcion_obras
+                    }
+
                 }
             }
         }
@@ -282,7 +262,9 @@ iframe {
 
             div {
                 h2 {
-                    font-weight: bold;
+                    a {
+                        @include descripcion_obras
+                    }
                 }
             }
         }
@@ -296,7 +278,10 @@ iframe {
 
             div {
                 h2 {
-                    font-weight: bold;
+                    a {
+                        @include descripcion_obras
+                    }
+
                 }
             }
         }
@@ -310,7 +295,9 @@ iframe {
 
             div {
                 h2 {
-                    font-weight: bold;
+                    a {
+                        @include descripcion_obras
+                    }
                 }
             }
         }
@@ -324,7 +311,9 @@ iframe {
 
             div {
                 h2 {
-                    font-weight: bold;
+                    a {
+                        @include descripcion_obras
+                    }
                 }
             }
         }
@@ -338,7 +327,9 @@ iframe {
 
             div {
                 h2 {
-                    font-weight: bold;
+                    a {
+                        @include descripcion_obras
+                    }
                 }
             }
 
@@ -353,7 +344,9 @@ iframe {
 
             div {
                 h2 {
-                    font-weight: bold;
+                    a {
+                        @include descripcion_obras
+                    }
                 }
             }
         }
@@ -376,9 +369,7 @@ iframe {
 
         h1 {
             padding: 16px;
-            font-family: "Inter", sans-serif;
-            font-size: 3rem;
-            font-weight: 900;
+            @include estilo_titulo;
         }
 
         .malba_sucursales {
@@ -386,14 +377,12 @@ iframe {
             margin-left: 100px;
 
             iframe {
-                margin: 0;
+                margin: 500px;
             }
 
             .malba_figueroa {
                 h3 {
-                    font-family: "Montserrat", sans-serif;
-                    font-size: 2rem;
-                    font-weight: bold;
+                    @include estilo_subtitulo;
                     margin: 0%
                 }
             }
@@ -402,28 +391,30 @@ iframe {
                 margin-top: 50px;
 
                 h3 {
-                    font-family: "Montserrat", sans-serif;
-                    font-size: 2rem;
-                    font-weight: bold;
+                    @include estilo_subtitulo;
                     margin: 0%
                 }
             }
 
         }
 
+    }
+    
         .transporte {
             ul {
                 list-style: none;
-                padding: 16px;
+                padding: 30px;
                 gap: 20px;
                 display: flex;
                 flex-direction: column;
+
+                li {
+                    span {
+                        @include estilo_span;
+                    }
+                }
+
             }
 
-            span {
-                font-size: 1rem;
-                font-weight: bold;
-            }
         }
-    }
 }

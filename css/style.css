@@ -12,6 +12,7 @@ body {
   overflow-x: hidden;
 }
 
+/* Mixing */
 /* Header */
 header {
   width: 100%;
@@ -190,14 +191,11 @@ iframe {
   grid-template-columns: 30% 40% 30%;
 }
 .agenda .grid_agenda h2 {
-  grid-area: titulo;
-  text-align: center;
   font-family: "Inter", sans-serif;
   font-size: 3rem;
   font-weight: 900;
 }
 .agenda .grid_agenda h3 {
-  grid-area: texto1;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: bold;
@@ -253,10 +251,10 @@ iframe {
 .main_excibiciones h1 {
   padding: 30px;
   margin-top: 60px;
+  color: #000000;
   font-family: "Inter", sans-serif;
   font-size: 3rem;
   font-weight: 900;
-  color: #000000;
 }
 .main_excibiciones .grid_excibiciones {
   display: grid;
@@ -275,8 +273,10 @@ iframe {
   display: flex;
   flex-direction: column-reverse;
 }
-.main_excibiciones .grid_excibiciones .obra1 div h2 {
+.main_excibiciones .grid_excibiciones .obra1 div h2 a {
   font-weight: bold;
+  text-decoration: none;
+  color: #000000;
 }
 .main_excibiciones .grid_excibiciones .obra2 {
   grid-area: obra2;
@@ -285,8 +285,10 @@ iframe {
   display: flex;
   flex-direction: column-reverse;
 }
-.main_excibiciones .grid_excibiciones .obra2 div h2 {
+.main_excibiciones .grid_excibiciones .obra2 div h2 a {
   font-weight: bold;
+  text-decoration: none;
+  color: #000000;
 }
 .main_excibiciones .grid_excibiciones .obra3 {
   grid-area: obra3;
@@ -295,8 +297,10 @@ iframe {
   display: flex;
   flex-direction: column-reverse;
 }
-.main_excibiciones .grid_excibiciones .obra3 div h2 {
+.main_excibiciones .grid_excibiciones .obra3 div h2 a {
   font-weight: bold;
+  text-decoration: none;
+  color: #000000;
 }
 .main_excibiciones .grid_excibiciones .obra4 {
   grid-area: obra4;
@@ -305,8 +309,10 @@ iframe {
   display: flex;
   flex-direction: column-reverse;
 }
-.main_excibiciones .grid_excibiciones .obra4 div h2 {
+.main_excibiciones .grid_excibiciones .obra4 div h2 a {
   font-weight: bold;
+  text-decoration: none;
+  color: #000000;
 }
 .main_excibiciones .grid_excibiciones .obra5 {
   grid-area: obra5;
@@ -315,8 +321,10 @@ iframe {
   display: flex;
   flex-direction: column-reverse;
 }
-.main_excibiciones .grid_excibiciones .obra5 div h2 {
+.main_excibiciones .grid_excibiciones .obra5 div h2 a {
   font-weight: bold;
+  text-decoration: none;
+  color: #000000;
 }
 .main_excibiciones .grid_excibiciones .obra6 {
   grid-area: obra6;
@@ -325,8 +333,10 @@ iframe {
   display: flex;
   flex-direction: column-reverse;
 }
-.main_excibiciones .grid_excibiciones .obra6 div h2 {
+.main_excibiciones .grid_excibiciones .obra6 div h2 a {
   font-weight: bold;
+  text-decoration: none;
+  color: #000000;
 }
 .main_excibiciones .grid_excibiciones .obra7 {
   grid-area: obra7;
@@ -335,8 +345,10 @@ iframe {
   display: flex;
   flex-direction: column-reverse;
 }
-.main_excibiciones .grid_excibiciones .obra7 div h2 {
+.main_excibiciones .grid_excibiciones .obra7 div h2 a {
   font-weight: bold;
+  text-decoration: none;
+  color: #000000;
 }
 .main_excibiciones .grid_excibiciones .obra8 {
   padding: 16px;
@@ -345,8 +357,10 @@ iframe {
   display: flex;
   flex-direction: column-reverse;
 }
-.main_excibiciones .grid_excibiciones .obra8 div h2 {
+.main_excibiciones .grid_excibiciones .obra8 div h2 a {
   font-weight: bold;
+  text-decoration: none;
+  color: #000000;
 }
 .main_excibiciones .grid_excibiciones .obra9 {
   grid-area: obra9;
@@ -355,8 +369,10 @@ iframe {
   display: flex;
   flex-direction: column-reverse;
 }
-.main_excibiciones .grid_excibiciones .obra9 div h2 {
+.main_excibiciones .grid_excibiciones .obra9 div h2 a {
   font-weight: bold;
+  text-decoration: none;
+  color: #000000;
 }
 
 /* Main de COMO LLEGAR */
@@ -384,7 +400,7 @@ iframe {
   margin-left: 100px;
 }
 .main_como_llegar .sucursales .malba_sucursales iframe {
-  margin: 0;
+  margin: 500px;
 }
 .main_como_llegar .sucursales .malba_sucursales .malba_figueroa h3 {
   font-family: "Montserrat", sans-serif;
@@ -401,14 +417,14 @@ iframe {
   font-weight: bold;
   margin: 0%;
 }
-.main_como_llegar .sucursales .transporte ul {
+.main_como_llegar .transporte ul {
   list-style: none;
-  padding: 16px;
+  padding: 30px;
   gap: 20px;
   display: flex;
   flex-direction: column;
 }
-.main_como_llegar .sucursales .transporte span {
+.main_como_llegar .transporte ul li span {
   font-size: 1rem;
   font-weight: bold;
 }
@@ -418,19 +434,24 @@ iframe {
 @media (max-width: 480px) {
   /* Header */
   header {
+    padding: 20px;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-content: space-evenly;
+  }
+  header nav ul {
+    display: none;
   }
   header .dropdown {
-    display: flex;
-    flex-direction: column;
+    display: block;
   }
-  header ul {
-    padding: 0%;
-    display: flex;
-    align-items: center;
+  header img {
+    height: 30px;
+  }
+  header button {
+    background-color: #000000;
   }
   /* Main de index */
   .logo img {
