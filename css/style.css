@@ -27,7 +27,7 @@ header {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
 }
-header .dropdown {
+header .navbar_header {
   display: none;
 }
 header img {
@@ -439,14 +439,12 @@ iframe {
   header nav ul {
     display: none;
   }
-  header .dropdown {
-    display: block;
-  }
   header img {
+    display: none;
     height: 30px;
   }
-  header button {
-    background-color: #000000;
+  header .navbar_header {
+    display: block;
   }
   /* Main de index */
   .logo img {

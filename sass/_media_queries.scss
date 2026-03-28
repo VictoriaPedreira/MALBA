@@ -21,16 +21,13 @@
             }
         }
 
-        .dropdown {
-            display: block;
-        }
-
         img {
+            display: none;
             height: 30px;
         }
 
-        button {
-            background-color: $negro;
+        .navbar_header{
+            display: block;
         }
 
     }
