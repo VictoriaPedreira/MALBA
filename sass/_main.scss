@@ -36,8 +36,11 @@ iframe {
     align-items: flex-start;
     padding: 30px;
 
-    img {
+    .malba_imagen {
         width: 40%;
+    }
+    .malba_imagen_2{
+        display: none;
     }
 
     div {
@@ -80,9 +83,6 @@ iframe {
 }
 
 .agenda {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
 
     .grid_agenda {
         height: 500px;
@@ -359,7 +359,7 @@ iframe {
 
             iframe {
                 margin: 0;
-                width: 100%;
+                width: 100vh;
                 height: 400px;
             }
 

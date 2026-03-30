@@ -5,6 +5,10 @@
 /* MOBILE */
 @media (max-width: 480px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
     /* Header */
 
     header {
@@ -26,7 +30,7 @@
             height: 30px;
         }
 
-        .navbar_header{
+        .navbar_header {
             display: block;
         }
 
@@ -52,7 +56,11 @@
             padding: 16px;
         }
 
-        img {
+        .malba_imagen {
+            display: none;
+        }
+
+        .malba_imagen_2 {
             display: none;
         }
     }
@@ -159,3 +167,288 @@
         }
     }
 }
+
+/* TABLET */
+@media (min-width: 481px) and (max-width: 971px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+        padding: 20px;
+        width: 100vh;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        align-content: space-evenly;
+
+        nav {
+            ul {
+                display: none;
+            }
+        }
+
+        img {
+            display: none;
+            height: 30px;
+        }
+
+        .navbar_header {
+            display: block;
+        }
+
+    }
+
+    /* Main de index */
+
+    .main_index {
+        .portada {
+            width: 200px;
+        }
+    }
+
+    .logo {
+        img {
+            width: 400px;
+            padding: 30px;
+        }
+    }
+
+    .historia {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 30px;
+
+        .malba_imagen {
+            display: none;
+        }
+
+        .malba_imagen_2 {
+            display: block;
+            width: 100%;
+        }
+
+        div {
+            width: 60%;
+            padding: 0px 16px 16px 0px;
+
+            h1 {
+                @include estilo_titulo
+            }
+
+            p {
+                @include tablet_texto
+            }
+        }
+    }
+
+    .excibiciones {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .descripcion {
+            width: 100%;
+            padding: 0px;
+
+            h3 {
+                font-size: x-large;
+            }
+
+            p {
+                @include tablet_texto
+            }
+        }
+
+        .w-50 {
+            width: 100% !important;
+        }
+
+    }
+
+    .agenda {
+        .grid_agenda {
+            width: 100%;
+            display: grid;
+            justify-items: center;
+            grid-template-areas:
+                "titulo titulo"
+                "texto1 dias"
+                "texto2 texto2";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+
+
+            .titulo {
+                grid-area: titulo;
+                text-align: center;
+                padding: 30px;
+            }
+
+            .texto1_grid {
+                grid-area: texto1;
+            }
+
+            .dias_grid {
+                grid-area: dias;
+                height: 300px;
+            }
+
+            p {
+                grid-area: texto2;
+            }
+        }
+    }
+
+    /* Main de EXHIBICIONES */
+    .main_excibiciones{
+        width: 100%;
+        .grid_excibiciones{
+            display: grid;
+            width: 10%;
+            gap: 100px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+            "obra1 obra2"
+             "obra3 obra4"
+              "obra5 obra6"
+               "obra7 obra9";
+
+               .obra1{
+                width: 400px;
+                
+               }
+               .obra2{
+                @include tablet_obra
+      
+               }
+               .obra3{
+                width: 400px;
+               }
+               .obra4{
+                 @include tablet_obra
+               
+               }
+               .obra5{
+                width: 400px;
+               }
+               .obra6{
+                 @include tablet_obra
+             
+               }
+               .obra7{
+                width: 400px;
+               }
+               .obra8{
+                display: none;
+               }
+               .obra9{
+                 @include tablet_obra
+             
+               }
+               
+             
+        }
+
+    
+    }
+
+
+
+
+
+        /* Main de COMO LLEGAR */
+        .main_como_llegar {
+            .sucursales {
+                .malba_sucursales {
+                    iframe {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Footer */
+
+        Footer {
+            width: 100%;
+            padding: 16px;
+            background-color: $amarillo;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+
+            .redes {
+                ul {
+                    padding: 0%;
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        transition: 0.3s;
+                    }
+
+                    img:hover {
+                        transform: scale(1.2);
+                    }
+
+                }
+
+            }
+
+            .politicas {
+                padding: 16px;
+
+                img {
+                    height: 50px;
+                }
+
+                nav {
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 30px;
+                        padding: 0%;
+
+                        li {
+                            a {
+                                font-family: "Montserrat", sans-serif;
+                                font-weight: bold;
+                                text-decoration: none;
+                                color: $negro;
+                                opacity: 100%;
+
+                            }
+
+                            a:hover {
+                                opacity: 50%;
+                            }
+
+
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+    }

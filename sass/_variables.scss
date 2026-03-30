@@ -25,3 +25,13 @@ $negro: #000000;
     font-size: 1rem;
     font-weight: bold;
 }
+
+@mixin tablet_texto {
+    width: 911px;
+    text-align: justify;
+}
+
+@mixin tablet_obra {
+    width: 400px;
+    margin-left: 50px;
+}
