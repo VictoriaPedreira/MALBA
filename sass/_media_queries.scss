@@ -10,33 +10,38 @@
     }
 
     /* Header */
-
     header {
-        padding: 20px;
-        width: 100%;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        align-content: space-evenly;
+        position: sticky;
+        top: 0;
+        z-index: 10000;
+        background-color: $blanco;
 
-        nav {
-            ul {
-                display: none;
-            }
-        }
-
-        img {
+        .header_flex {
             display: none;
-            height: 30px;
         }
 
         .navbar_header {
             display: block;
+            width: 100%;
+            padding: 30px;
+            background-color: $blanco;
+            font-family: "Montserrat",
+                sans-serif;
+            font-weight: bold;
+
+            img {
+                width: 200px;
+            }
+
+
+
         }
 
     }
 
+
     /* Main de index */
+
 
     .logo {
         img {
@@ -123,6 +128,16 @@
         }
     }
 
+    /* Main de excibicionez */
+    .main_excibiciones {
+        .grid_excibiciones {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
     /* Main de COMO LLEGAR */
     .sucursales {
         display: flex;
@@ -139,15 +154,7 @@
 
     }
 
-    /* Main de excibicionez */
-    .main_excibiciones {
-        .grid_excibiciones {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
 
-    }
 
     /* Footer */
 
@@ -177,70 +184,60 @@
 
     /* Header */
     header {
-        padding: 20px;
-        width: 100vh;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        align-content: space-evenly;
+        position: sticky;
+        top: 0;
+        z-index: 10000;
+        background-color: $blanco;
+        
 
-        nav {
-            ul {
-                display: none;
-            }
-        }
-
-        img {
+        .header_flex {
             display: none;
-            height: 30px;
         }
 
         .navbar_header {
             display: block;
+            width: 100%;
+            padding: 30px;
+            background-color: $blanco;
+            font-family: "Montserrat",
+                sans-serif;
+            font-weight: bold;
+
+            img {
+                width: 200px;
+            }
+
+
+
         }
 
     }
 
     /* Main de index */
-
-    .main_index {
-        .portada {
-            width: 200px;
-        }
-    }
-
     .logo {
         img {
-            width: 400px;
+            width: 100%;
             padding: 30px;
         }
     }
 
     .historia {
+        width: 100%;
         display: flex;
         flex-direction: column-reverse;
-        padding: 30px;
+        padding: 0%;
+
+        div {
+            width: 100%;
+            padding: 0px 30px 30px 30px;
+        }
 
         .malba_imagen {
             display: none;
         }
 
         .malba_imagen_2 {
-            display: block;
-            width: 100%;
-        }
-
-        div {
-            width: 60%;
-            padding: 0px 16px 16px 0px;
-
-            h1 {
-                @include estilo_titulo
-            }
-
-            p {
-                @include tablet_texto
-            }
+            display: none;
         }
     }
 
@@ -251,14 +248,13 @@
 
         .descripcion {
             width: 100%;
-            padding: 0px;
 
             h3 {
                 font-size: x-large;
             }
 
             p {
-                @include tablet_texto
+                width: 700px;
             }
         }
 
@@ -271,20 +267,21 @@
     .agenda {
         .grid_agenda {
             width: 100%;
+            height: auto;
+            gap: 10px;
             display: grid;
-            justify-items: center;
             grid-template-areas:
-                "titulo titulo"
-                "texto1 dias"
-                "texto2 texto2";
-            grid-template-columns: 1fr 1fr;
+                "titulo"
+                "texto1"
+                "dias"
+                "texto2";
+            grid-template-columns: 1fr;
             grid-template-rows: auto;
 
 
             .titulo {
                 grid-area: titulo;
                 text-align: center;
-                padding: 30px;
             }
 
             .texto1_grid {
@@ -300,155 +297,141 @@
                 grid-area: texto2;
             }
         }
+
+
     }
 
-    /* Main de EXHIBICIONES */
-    .main_excibiciones{
-        width: 100%;
-        .grid_excibiciones{
-            display: grid;
-            width: 10%;
-            gap: 100px;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-areas:
-            "obra1 obra2"
-             "obra3 obra4"
-              "obra5 obra6"
-               "obra7 obra9";
+    /* Main de COMO LLEGAR */
+    .main_como_llegar {
+        .sucursales {
+            .malba_sucursales {
+                margin-left: 30px;
 
-               .obra1{
-                width: 400px;
-                
-               }
-               .obra2{
-                @include tablet_obra
-      
-               }
-               .obra3{
-                width: 400px;
-               }
-               .obra4{
-                 @include tablet_obra
-               
-               }
-               .obra5{
-                width: 400px;
-               }
-               .obra6{
-                 @include tablet_obra
-             
-               }
-               .obra7{
-                width: 400px;
-               }
-               .obra8{
-                display: none;
-               }
-               .obra9{
-                 @include tablet_obra
-             
-               }
-               
-             
-        }
-
-    
-    }
-
-
-
-
-
-        /* Main de COMO LLEGAR */
-        .main_como_llegar {
-            .sucursales {
-                .malba_sucursales {
-                    iframe {
-                        width: 100%;
-                    }
+                iframe {
+                    width: 400px;
+                    height: 400px;
                 }
             }
         }
+    }
 
+    /* Main de excibicionez */
+    .main_excibiciones {
 
+        width: 80%;
+        margin: auto;
 
-
-
-
-
-
-
-
-
-
-
-        /* Footer */
-
-        Footer {
-            width: 100%;
-            padding: 16px;
-            background-color: $amarillo;
+        h1 {
+            padding: 30px;
+            margin: 0px;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            align-content: center;
+            justify-content: center;
+        }
 
-            .redes {
+        .grid_excibiciones {
+            width: 100%;
+            gap: 0px;
+            display: flex;
+            flex-direction: column;
+
+            div {
+                width: 100%;
+                padding: 0px;
+            }
+
+        }
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Footer */
+
+    Footer {
+        width: 100%;
+        padding: 16px;
+        background-color: $amarillo;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+
+        .redes {
+            ul {
+                padding: 0%;
+                list-style: none;
+                display: flex;
+                align-items: center;
+
+                img {
+                    transition: 0.3s;
+                }
+
+                img:hover {
+                    transform: scale(1.2);
+                }
+
+            }
+
+        }
+
+        .politicas {
+            padding: 16px;
+
+            img {
+                height: 50px;
+            }
+
+            nav {
                 ul {
-                    padding: 0%;
                     list-style: none;
                     display: flex;
                     align-items: center;
+                    justify-content: flex-start;
+                    gap: 30px;
+                    padding: 0%;
 
-                    img {
-                        transition: 0.3s;
-                    }
-
-                    img:hover {
-                        transform: scale(1.2);
-                    }
-
-                }
-
-            }
-
-            .politicas {
-                padding: 16px;
-
-                img {
-                    height: 50px;
-                }
-
-                nav {
-                    ul {
-                        list-style: none;
-                        display: flex;
-                        align-items: center;
-                        justify-content: flex-start;
-                        gap: 30px;
-                        padding: 0%;
-
-                        li {
-                            a {
-                                font-family: "Montserrat", sans-serif;
-                                font-weight: bold;
-                                text-decoration: none;
-                                color: $negro;
-                                opacity: 100%;
-
-                            }
-
-                            a:hover {
-                                opacity: 50%;
-                            }
-
+                    li {
+                        a {
+                            font-family: "Montserrat", sans-serif;
+                            font-weight: bold;
+                            text-decoration: none;
+                            color: $negro;
+                            opacity: 100%;
 
                         }
 
+                        a:hover {
+                            opacity: 50%;
+                        }
+
+
                     }
+
                 }
             }
-
         }
 
     }
+
+}

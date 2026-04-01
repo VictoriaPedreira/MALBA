@@ -4,58 +4,68 @@
 /* Header */
 
 header {
-    width: 100%;
-    padding: 30px;
-    background-color: $blanco;
     position: sticky;
     top: 0;
     z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-     
-    .navbar_header{
+    background-color: $blanco;
+
+    .navbar_header {
         display: none;
     }
 
-
-    img {
-        height: 50px;
-    }
-
-    nav {
-        height: 50px;
+    .header_flex {
+        width: 100%;
+        padding: 30px;
+        background-color: $blanco;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        flex-direction: column-reverse;
+        font-family: "Montserrat",
+            sans-serif;
+        font-weight: 900;
 
-        ul {
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-            gap: 50px;
-            list-style: none;
 
-            li {
-                a {
-                    text-decoration: none;
-                    padding: 10px;
-                    color: $negro;
-                    border: 1px solid #000000;
 
-                }
 
-                a:hover {
-                    color: $blanco;
-                    background-color: #000000;
-                    transition: 1s;
-                }
-            }
-
+        img {
+            height: 50px;
         }
+
+        nav {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            flex-direction: column-reverse;
+
+            ul {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                gap: 50px;
+                list-style: none;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        padding: 10px;
+                        color: $negro;
+                        border: 1px solid #000000;
+
+                    }
+
+                    a:hover {
+                        color: $blanco;
+                        background-color: #000000;
+                        transition: 1s;
+                    }
+                }
+
+            }
+        }
+
+
     }
+
 
 }
 
@@ -112,13 +122,14 @@ Footer {
                         text-decoration: none;
                         color: $negro;
                         opacity: 100%;
-                        
+
                     }
-                    a:hover{
+
+                    a:hover {
                         opacity: 50%;
                     }
 
-                
+
                 }
 
             }

@@ -15,44 +15,47 @@ body {
 /* Mixing */
 /* Header */
 header {
-  width: 100%;
-  padding: 30px;
-  background-color: #ffffff;
   position: sticky;
   top: 0;
   z-index: 100;
+  background-color: #ffffff;
+}
+header .navbar_header {
+  display: none;
+}
+header .header_flex {
+  width: 100%;
+  padding: 30px;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
 }
-header .navbar_header {
-  display: none;
-}
-header img {
+header .header_flex img {
   height: 50px;
 }
-header nav {
+header .header_flex nav {
   height: 50px;
   display: flex;
   align-items: center;
   flex-direction: column-reverse;
 }
-header nav ul {
+header .header_flex nav ul {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   gap: 50px;
   list-style: none;
 }
-header nav ul li a {
+header .header_flex nav ul li a {
   text-decoration: none;
   padding: 10px;
   color: #000000;
   border: 1px solid #000000;
 }
-header nav ul li a:hover {
+header .header_flex nav ul li a:hover {
   color: #ffffff;
   background-color: #000000;
   transition: 1s;
@@ -151,6 +154,9 @@ iframe {
   font-size: 3rem;
   font-weight: 900;
 }
+.historia div p {
+  text-align: justify;
+}
 
 .excibiciones {
   background-color: #000000;
@@ -161,7 +167,7 @@ iframe {
 }
 .excibiciones .descripcion {
   width: 60%;
-  padding: 0px 100px 16px 16px;
+  padding: 0px 100px 16px 0px;
   color: #ffffff;
 }
 .excibiciones .descripcion h2 {
@@ -178,6 +184,9 @@ iframe {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: bold;
+}
+.excibiciones .descripcion p {
+  text-align: justify;
 }
 
 .agenda .grid_agenda {
@@ -430,22 +439,24 @@ iframe {
   }
   /* Header */
   header {
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    align-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    background-color: #ffffff;
   }
-  header nav ul {
+  header .header_flex {
     display: none;
-  }
-  header img {
-    display: none;
-    height: 30px;
   }
   header .navbar_header {
     display: block;
+    width: 100%;
+    padding: 30px;
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+  }
+  header .navbar_header img {
+    width: 200px;
   }
   /* Main de index */
   .logo img {
@@ -508,6 +519,12 @@ iframe {
   .agenda .grid_agenda p {
     grid-area: texto2;
   }
+  /* Main de excibicionez */
+  .main_excibiciones .grid_excibiciones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
   /* Main de COMO LLEGAR */
   .sucursales {
     display: flex;
@@ -519,12 +536,6 @@ iframe {
   .sucursales .malba_sucursales iframe {
     width: 100%;
     height: 400px;
-  }
-  /* Main de excibicionez */
-  .main_excibiciones .grid_excibiciones {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
   }
   /* Footer */
   footer {
@@ -548,55 +559,45 @@ iframe {
   }
   /* Header */
   header {
-    padding: 20px;
-    width: 100vh;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    align-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    background-color: #ffffff;
   }
-  header nav ul {
+  header .header_flex {
     display: none;
-  }
-  header img {
-    display: none;
-    height: 30px;
   }
   header .navbar_header {
     display: block;
+    width: 100%;
+    padding: 30px;
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
   }
-  /* Main de index */
-  .main_index .portada {
+  header .navbar_header img {
     width: 200px;
   }
+  /* Main de index */
   .logo img {
-    width: 400px;
+    width: 100%;
     padding: 30px;
   }
   .historia {
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
-    padding: 30px;
+    padding: 0%;
+  }
+  .historia div {
+    width: 100%;
+    padding: 0px 30px 30px 30px;
   }
   .historia .malba_imagen {
     display: none;
   }
   .historia .malba_imagen_2 {
-    display: block;
-    width: 100%;
-  }
-  .historia div {
-    width: 60%;
-    padding: 0px 16px 16px 0px;
-  }
-  .historia div h1 {
-    font-family: "Inter", sans-serif;
-    font-size: 3rem;
-    font-weight: 900;
-  }
-  .historia div p {
-    width: 911px;
-    text-align: justify;
+    display: none;
   }
   .excibiciones {
     width: 100%;
@@ -605,30 +606,28 @@ iframe {
   }
   .excibiciones .descripcion {
     width: 100%;
-    padding: 0px;
   }
   .excibiciones .descripcion h3 {
     font-size: x-large;
   }
   .excibiciones .descripcion p {
-    width: 911px;
-    text-align: justify;
+    width: 700px;
   }
   .excibiciones .w-50 {
     width: 100% !important;
   }
   .agenda .grid_agenda {
     width: 100%;
+    height: auto;
+    gap: 10px;
     display: grid;
-    justify-items: center;
-    grid-template-areas: "titulo titulo" "texto1 dias" "texto2 texto2";
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titulo" "texto1" "dias" "texto2";
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
   .agenda .grid_agenda .titulo {
     grid-area: titulo;
     text-align: center;
-    padding: 30px;
   }
   .agenda .grid_agenda .texto1_grid {
     grid-area: texto1;
@@ -640,51 +639,34 @@ iframe {
   .agenda .grid_agenda p {
     grid-area: texto2;
   }
-  /* Main de EXHIBICIONES */
+  /* Main de COMO LLEGAR */
+  .main_como_llegar .sucursales .malba_sucursales {
+    margin-left: 30px;
+  }
+  .main_como_llegar .sucursales .malba_sucursales iframe {
+    width: 400px;
+    height: 400px;
+  }
+  /* Main de excibicionez */
   .main_excibiciones {
-    width: 100%;
+    width: 80%;
+    margin: auto;
+  }
+  .main_excibiciones h1 {
+    padding: 30px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
   }
   .main_excibiciones .grid_excibiciones {
-    display: grid;
-    width: 10%;
-    gap: 100px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "obra1 obra2" "obra3 obra4" "obra5 obra6" "obra7 obra9";
-  }
-  .main_excibiciones .grid_excibiciones .obra1 {
-    width: 400px;
-  }
-  .main_excibiciones .grid_excibiciones .obra2 {
-    width: 400px;
-    margin-left: 50px;
-  }
-  .main_excibiciones .grid_excibiciones .obra3 {
-    width: 400px;
-  }
-  .main_excibiciones .grid_excibiciones .obra4 {
-    width: 400px;
-    margin-left: 50px;
-  }
-  .main_excibiciones .grid_excibiciones .obra5 {
-    width: 400px;
-  }
-  .main_excibiciones .grid_excibiciones .obra6 {
-    width: 400px;
-    margin-left: 50px;
-  }
-  .main_excibiciones .grid_excibiciones .obra7 {
-    width: 400px;
-  }
-  .main_excibiciones .grid_excibiciones .obra8 {
-    display: none;
-  }
-  .main_excibiciones .grid_excibiciones .obra9 {
-    width: 400px;
-    margin-left: 50px;
-  }
-  /* Main de COMO LLEGAR */
-  .main_como_llegar .sucursales .malba_sucursales iframe {
     width: 100%;
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main_excibiciones .grid_excibiciones div {
+    width: 100%;
+    padding: 0px;
   }
   /* Footer */
   Footer {
