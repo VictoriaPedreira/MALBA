@@ -442,6 +442,7 @@ Footer .politicas nav ul li a:hover {
   }
   /* Header */
   header {
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 10000;
@@ -491,10 +492,10 @@ Footer .politicas nav ul li a:hover {
     width: 100%;
   }
   .excibiciones .descripcion h3 {
-    font-size: x-large;
+    font-size: 2rem;
   }
   .excibiciones .descripcion p {
-    width: 400px;
+    width: 350px;
   }
   .excibiciones .w-50 {
     width: 100% !important;
@@ -528,17 +529,38 @@ Footer .politicas nav ul li a:hover {
     display: flex;
     flex-direction: column;
   }
+  .main_excibiciones .grid_excibiciones .obra1 {
+    width: 100%;
+  }
+  .main_excibiciones .grid_excibiciones .obra2 {
+    width: 100%;
+  }
+  .main_excibiciones .grid_excibiciones .obra4 {
+    width: 100%;
+  }
+  .main_excibiciones .grid_excibiciones .obra5 {
+    width: 100%;
+  }
+  .main_excibiciones .grid_excibiciones .obra7 {
+    width: 100%;
+  }
+  .main_excibiciones .grid_excibiciones .obra8 {
+    width: 100%;
+  }
   /* Main de COMO LLEGAR */
-  .sucursales {
+  .main_como_llegar .sucursales {
     display: flex;
     flex-direction: column;
   }
-  .sucursales .malba_sucursales {
+  .main_como_llegar .sucursales .malba_sucursales {
     margin: 0 !important;
   }
-  .sucursales .malba_sucursales iframe {
+  .main_como_llegar .sucursales .malba_sucursales iframe {
     width: 100%;
     height: 400px;
+  }
+  .main_como_llegar .transportes ul {
+    width: 100%;
   }
   /* Footer */
   footer {
@@ -583,7 +605,7 @@ Footer .politicas nav ul li a:hover {
   }
   /* Main de index */
   .logo img {
-    width: 100%;
+    width: 60%;
     padding: 30px;
   }
   .historia {
