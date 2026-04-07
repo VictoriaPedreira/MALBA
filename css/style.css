@@ -120,12 +120,14 @@ Footer .politicas nav ul li a:hover {
   background-size: cover;
   animation-name: portada;
   animation-iteration-count: infinite;
-  animation-delay: 0s;
+  animation-delay: 1s;
+  transition: 2s;
   animation-duration: 10s;
 }
 
-iframe {
+.video iframe {
   width: 100vw;
+  padding-bottom: 20px;
 }
 
 .logo img {
@@ -224,6 +226,7 @@ iframe {
 }
 .agenda .grid_agenda .texto2_grid {
   grid-area: texto2;
+  text-align: justify;
 }
 
 @keyframes portada {
@@ -258,7 +261,7 @@ iframe {
   justify-content: space-between;
   align-content: start;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "obra1 obra2 obra3" "obra4 obra5 obra6" "obra7 obra8 obra9";
 }
@@ -404,7 +407,7 @@ iframe {
   display: flex;
   flex-direction: column;
 }
-.main_como_llegar .sucursales .malba_sucursales .malba_figueroa h3 {
+.main_como_llegar .sucursales .malba_sucursales .malba_figueroa h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: bold;
@@ -413,7 +416,7 @@ iframe {
 .main_como_llegar .sucursales .malba_sucursales .malba_puertos {
   margin-top: 50px;
 }
-.main_como_llegar .sucursales .malba_sucursales .malba_puertos h3 {
+.main_como_llegar .sucursales .malba_sucursales .malba_puertos h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: bold;

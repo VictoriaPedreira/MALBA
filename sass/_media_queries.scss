@@ -46,7 +46,7 @@
     .logo {
         img {
             width: 100%;
-            padding: 20px
+            padding: 20px;
         }
     }
 
@@ -345,27 +345,7 @@
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* Footer */
+ /* Footer */
 
     Footer {
         width: 100%;
@@ -385,11 +365,12 @@
 
                 img {
                     transition: 0.3s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
                 }
 
-                img:hover {
-                    transform: scale(1.2);
-                }
+                
 
             }
 
@@ -418,12 +399,13 @@
                             text-decoration: none;
                             color: $negro;
                             opacity: 100%;
+                            &:hover{
+                                opacity: 50%;
+                            }
 
                         }
 
-                        a:hover {
-                            opacity: 50%;
-                        }
+                        
 
 
                     }
